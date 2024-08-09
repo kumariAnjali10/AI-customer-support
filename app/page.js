@@ -1,12 +1,17 @@
 
 "use client"
 import React from "react";
-import {Chat} from "../components/chat";
+import {HomePage} from "../components/HomePage";
+import {LandingPage} from "../components/LandingPage"
+
 
 export default function Home() {
   return (
     <main className="">
-         <Chat></Chat>
+      <HomePage />
+      <div>
+      <LandingPage />
+      </div>
     </main>   
   );
 }
