@@ -88,7 +88,7 @@
 
 ❖ **Video Explanation**: [Link to the 3-minute video with 10 slides]
 
-## 🫱🏼‍🫲🏻👍🏻👍🏻 Contributing
+## 🫱🏼‍🫲🏻 Contributing
 
 We welcome contributions to enhance the AI Customer Support system! To contribute:
 
