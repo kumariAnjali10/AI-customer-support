@@ -36,7 +36,7 @@ export async function POST(req) {
             `https://api.cloudflare.com/client/v4/accounts/7b935f5a6cec6f8161465a274b691fb7/ai/run/@cf/meta/llama-3-8b-instruct`,
             {
                 headers: {
-                    Authorization: "Bearer eLby6SD2n54hW5wmlC20Z26Xven9_X3fd_Flsbl-",
+                    Authorization: `Bearer ${process.env.CLOUDFLARE_API_KEY}`,
                     "Content-Type": "application/json",
                 },
                 method: "POST",

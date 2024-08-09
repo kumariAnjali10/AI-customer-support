@@ -1,10 +1,10 @@
 # AI Customer Support
 
-![AI Customer Support](https://example.com/ai-customer-support-banner.png)
+![AI Customer Support]()
 
 ## Project Overview
 
-**AI Customer Support** is an innovative project designed to transform customer service using AI-powered chatbots. Built with **Next.js** and the **OpenAI API**, this project aims to provide efficient, intelligent, and scalable solutions for handling customer inquiries.
+**AI Customer Support** is an innovative project designed to transform customer service using AI-powered chatbots. Built with **Next.js** and the Gen-AI model **Cloudflare**, this project aims to provide efficient, intelligent, and scalable solutions for handling customer inquiries.
 
 ## ⚙️ Features
 
@@ -24,7 +24,7 @@
 
 ❖ **User Authentication**: Personalized chat experiences.
 
-❖ **Feedback Mechanism**: Users can rate chatbot responses for continuous improvement.
+❖ **Feedback Mechanism**: Users can give the feedback about chatbot responses for continuous improvement.
 
 
 ## ⧟ Project Plan
@@ -84,30 +84,11 @@
 
 ## 📈 Deployment
 
-❖ **Deployed Application**: [Your deployed app link or subdomain]
+❖ **Deployed Application**: 
+[Check our Chatbot]()
 
-❖ **Video Explanation**: [Link to the 3-minute video with 10 slides]
+❖ **Video Explanation**: [Link of the Demo Video]()
 
-## 🫱🏼‍🫲🏻 Contributing
-
-We welcome contributions to enhance the AI Customer Support system! To contribute:
-
-1. **[Fork](https://github.com/kumariAnjali10/AI_Support/fork)** **the Repository**.
-
-2. **Create a New Branch**:
-   ```bash
-   git checkout -b feature-your_username
-
-3. **Make Your Changes and Commit Them**
-   ```bash
-   git commit -m "Add new feature"
-
-4. **Push to the Branch**
-   ```bash
-   git push origin feature-your_username
-
-5. **Open a** **[Pull Request](https://github.com/kumariAnjali10/AI_Support/pulls)**
-  
 ## 🏵️ Acknowledgements
 - **Special thanks to the open-source community for their valuable resources and tools.**
 - **Thanks to our contributors for their dedication and hard work**
