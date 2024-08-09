@@ -13,17 +13,17 @@ import {
 import { TooltipProvider } from "@radix-ui/react-tooltip"
 
 function handleMicrophone() {
-    // Code to handle microphone
-    navigator.mediaDevices.getUserMedia({ audio: true })
-        .then(stream => {
-            // Handle the microphone stream
-            console.log("Microphone stream:", stream);
-        })
-        .catch(error => {
-            // Handle the error
-            console.error("Error accessing microphone:", error);
-        });
-    }
+  // Code to handle microphone
+  navigator.mediaDevices.getUserMedia({ audio: true })
+    .then(stream => {
+      // Handle the microphone stream
+      console.log("Microphone stream:", stream);
+    })
+    .catch(error => {
+      // Handle the error
+      console.error("Error accessing microphone:", error);
+    });
+}
 
 export function Chatbot() {
   return (
@@ -40,24 +40,24 @@ export function Chatbot() {
       />
       <div className="flex items-center p-3 pt-0">
         <TooltipProvider>
-        <Tooltip>
-          <TooltipTrigger asChild>
-            <Button variant="ghost" size="icon">
-              <Paperclip className="size-4" />
-              <span className="sr-only">Attach file</span>
-            </Button>
-          </TooltipTrigger>
-          <TooltipContent side="top">Attach File</TooltipContent>
-        </Tooltip>
-        <Tooltip>
-          <TooltipTrigger asChild>
-            <Button onclick={handleMicrophone} variant="ghost" size="icon">
-              <Mic className="size-4" />
-              <span className="sr-only">Use Microphone</span>
-            </Button>
-          </TooltipTrigger>
-          <TooltipContent side="top">Use Microphone</TooltipContent>
-        </Tooltip>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button variant="ghost" size="icon">
+                <Paperclip className="size-4" />
+                <span className="sr-only">Attach file</span>
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent side="top">Attach File</TooltipContent>
+          </Tooltip>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button onClick={handleMicrophone} variant="ghost" size="icon">
+                <Mic className="size-4" />
+                <span className="sr-only">Use Microphone</span>
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent side="top">Use Microphone</TooltipContent>
+          </Tooltip>
         </TooltipProvider>
         <Button type="submit" size="sm" className="ml-auto gap-1.5">
           Send Message
