@@ -1,12 +1,9 @@
-
 "use client";
-
-import Chatbot from "@/components/Chatbot";
-import { Divide } from "lucide-react";
-import { Main } from "next/document";
-// In this code we are using the MUI library so we made changes into this on 9th august 2024 so if it not runs don't worry. I will fix it soon. --mohitjoping
-// import { Box, Stack, TextField, Button } from "@mui/material";
+import { Chatbot } from "../components/Chatbot"; // Ensure this path and export are correct
 import { useState } from "react";
+
+// The MUI components are commented out for now. Ensure you fix imports and usage if needed.
+// import { Box, Stack, TextField, Button } from "@mui/material";
 
 export default function Home() {
   const [messages, setMessages] = useState([
@@ -21,8 +18,8 @@ export default function Home() {
   const sendMessage = async () => {
     if (!message.trim() || isLoading) return;
     setIsLoading(true);
-    setMessages((messages) => [
-      ...messages,
+    setMessages((prevMessages) => [
+      ...prevMessages,
       { role: "user", content: message },
       { role: "assistant", content: "" },
     ]);
@@ -47,9 +44,9 @@ export default function Home() {
       const processText = async ({ done, value }) => {
         if (done) return;
         const text = decoder.decode(value, { stream: true });
-        setMessages((messages) => {
-          let lastMessage = messages[messages.length - 1];
-          let otherMessages = messages.slice(0, messages.length - 1);
+        setMessages((prevMessages) => {
+          let lastMessage = prevMessages[prevMessages.length - 1];
+          let otherMessages = prevMessages.slice(0, -1);
           return [
             ...otherMessages,
             { ...lastMessage, content: lastMessage.content + text },
@@ -61,8 +58,8 @@ export default function Home() {
       reader.read().then(processText);
     } catch (error) {
       console.error("Error:", error);
-      setMessages((messages) => [
-        ...messages,
+      setMessages((prevMessages) => [
+        ...prevMessages,
         {
           role: "assistant",
           content: "I'm sorry, but I encountered an error. Please try again later.",
@@ -82,9 +79,9 @@ export default function Home() {
 
   return (
     <div className="flex justify-center items-center border-gray-200 w-full">
- <Chatbot />
+      <Chatbot />
     </div>
-   
+    // Uncomment and fix the MUI components below if you plan to use them
     // <Box
     //   width="100vw"
     //   height="100vh"

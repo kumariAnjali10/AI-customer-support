@@ -2,14 +2,14 @@
 
 import { CornerDownLeft, Mic, Paperclip } from "lucide-react"
 
-import { Button } from "@/components/ui/button"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
+import { Button } from "../components/ui/button"
+import { Label } from "../components/ui/label"
+import { Textarea } from "../components/ui/textarea"
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "@/components/ui/tooltip"
+} from "../components/ui/tooltip"
 import { TooltipProvider } from "@radix-ui/react-tooltip"
 
 function handleMicrophone() {
@@ -25,7 +25,7 @@ function handleMicrophone() {
         });
     }
 
-export default function Chatbot() {
+export function Chatbot() {
   return (
     <form
       className="relative overflow-hidden rounded-lg border bg-background focus-within:ring-1 focus-within:ring-ring w-1/2"
@@ -65,5 +65,5 @@ export default function Chatbot() {
         </Button>
       </div>
     </form>
-  )
+  );
 }
