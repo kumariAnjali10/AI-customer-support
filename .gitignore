@@ -7,7 +7,7 @@
 .yarn/install-state.gz
 
 # Cloudflare API Key:
-
+.env.local
 
 # testing
 /coverage
