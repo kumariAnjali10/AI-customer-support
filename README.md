@@ -1,6 +1,7 @@
 ![AI Customer Support](./public/Ai-Customer-support-banner.png)
 
 ## Project Overview
+The project aims to develop an AI-powered customer support system for educational purpose that can provide personalized and efficient support to customers. It uses the `Cloudflare` REST API key to generate the response.
 
 ## ⚙️ Features
 
