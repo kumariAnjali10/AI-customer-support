@@ -6,12 +6,12 @@ export function Navbar() {
   const navItems = [
     {
       name: "Home",
-      link: "/Home",
+      link: "/home",
       icon: <IconHome className="h-4 w-4  text-white dark:text-white" />,
     },
     {
         name: "Chat",
-        link: "/",
+        link: "/chat",
         Icon: (
             <IconMessage className="h-4 w-4 text-white dark:text-white" />
         ),

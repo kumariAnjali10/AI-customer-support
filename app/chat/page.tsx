@@ -1,9 +1,9 @@
 "use client";
 
 import { useState, useEffect, useRef, FormEvent, ChangeEvent } from "react";
-import { PlaceholdersAndVanishInput } from "../components/ui/placeholders-and-vanish-input";
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
-import { ScrollArea } from "./ui/scroll-area";
+import { PlaceholdersAndVanishInput } from "../../components/ui/placeholders-and-vanish-input";
+import { Avatar, AvatarFallback, AvatarImage } from "../../components/ui/avatar";
+import { ScrollArea } from "../../components/ui/scroll-area";
 
 interface Message {
   id: string;
@@ -12,7 +12,7 @@ interface Message {
   avatar?: string;
 }
 
-export function Chat() {
+export default function Chat() {
   const placeholders = [
     "What's the first rule of Fight Club?",
     "Who is Tyler Durden?",

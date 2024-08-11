@@ -1,8 +1,8 @@
 import { Navbar } from "@/components/Navbar";
-import { HeroSection } from "../components/HeroSection";
-import {Chat} from "../components/Chatbot"
+import { HeroSection } from "../../components/HeroSection";
 
-export  function HomePage() {
+
+export default function HomePage() {
     return (
       <main className="">
         <Navbar />
