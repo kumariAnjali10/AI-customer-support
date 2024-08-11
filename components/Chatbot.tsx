@@ -16,18 +16,16 @@ interface Message {
 
 export function Chat() {
   const placeholders = [
-    "What's the first rule of Fight Club?",
-    "Who is Tyler Durden?",
-    "Where is Andrew Laeddis hiding?",
-    "Write a Javascript method to reverse a string",
-    "How to assemble your own PC?",
+    "What is the primary goal of the Educational AI chatbot?",
+    "How should the AI chatbot greet new users?",
+    "When might the chatbot need to explain its purpose to a user?"
   ];
 
   const [messages, setMessages] = useState<Message[]>([
     {
       id: Date.now().toString(),
       role: "assistant",
-      content: "Hello! Welcome to HeadStarter AI Support. How can I assist you today?",
+      content: "Hello! Welcome to Educational AI Support. How can I assist you today?",
     },
   ]);
   const [isLoading, setIsLoading] = useState(false);
