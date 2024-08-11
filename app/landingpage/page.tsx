@@ -1,8 +1,9 @@
 "use client";
-import React from "react";
-import { SparklesCore } from "../components/ui/sparkles";
+import react from "react";
 
-export function LandingPage() {
+import { SparklesCore } from "../../components/ui/sparkles";
+
+export default function LandingPage() {
   return (
     <main className="bg-black min-h-screen">
       <div className="flex justify-end pt-10 pr-10">

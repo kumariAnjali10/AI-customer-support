@@ -1,6 +1,8 @@
 // import { HeroSection } from "@/components/HeroSection";
-import { Chat } from "@/components/Chatbot";
-import { HomePage } from "@/components/HomePage";
+
+// import Chat from "./chat/page";
+import LandingPage from "./landingpage/page";
+
 // import { LandingPage } from "@/components/LandingPage";
 
 
@@ -8,9 +10,7 @@ import { HomePage } from "@/components/HomePage";
 export default function Home() {
   return (
     <main className="">
-        {/* <HomePage /> */}
-        {/* <LandingPage /> */}
-        <Chat />  
+       <LandingPage />
     </main>
   );
 }
