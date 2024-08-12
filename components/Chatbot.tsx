@@ -20,6 +20,34 @@
 //     "How should the AI chatbot greet new users?",
 //     "When might the chatbot need to explain its purpose to a user?"
 //   ];
+// export function Chat() {
+//   const placeholders = [
+//     "What's the first rule of Fight Club?",
+//     "Who is Tyler Durden?",
+//     "Where is Andrew Laeddis hiding?",
+//     "Write a Javascript method to reverse a string",
+//     "How to assemble your own PC?",
+//     //new questions
+//     "What are some effective study techniques for [Computer Network]?",
+//     "How should I prepare for an upcoming exam in [BigData]?",
+//     "Can you help me create a study plan?",
+//     "What are some tips for improving my memory retention?",
+//     "How can I stay motivated while studying?",
+//     //Support and Troubleshooting
+//    "Who can I contact if I encounter a technical issue on HeadStarter AI?",
+//    "What should I do if my session fails to start?",
+//    "How do I report a bug or suggest a feature improvement?",
+//    "What are the most common technical issues users face on HeadStarter AI?",
+//    "How can I get help if I'm not sure how to use a specific feature?",
+//    //Learning and improvement 
+//    "What resources does HeadStarter AI offer to help me prepare for interviews?",
+//     "How can I improve my coding skills using HeadStarter AI?",
+//     "Are there any tutorials or guides available on how to use HeadStarter AI effectively?",
+//     "Can HeadStarter AI help me with behavioral interview preparation?",
+//    " How do I set goals and track my improvement over time on HeadStarter AI?"
+    
+//     ,
+//   ];
 
 //   const [messages, setMessages] = useState<Message[]>([
 //     {
