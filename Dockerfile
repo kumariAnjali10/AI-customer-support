@@ -13,11 +13,11 @@ RUN npm install
 # Copy the rest of the application code
 COPY . .
 
-# Set build arguments
-ARG CLOUDFLARE_API_KEY
+# # Set build arguments
+# ARG CLOUDFLARE_API_KEY
 
-# Set environment variable
-ENV CLOUDFLARE_API_KEY=${CLOUDFLARE_API_KEY}
+# # Set environment variable
+# ENV CLOUDFLARE_API_KEY=${CLOUDFLARE_API_KEY}
 
 # Build the Next.js application
 RUN npm run build
